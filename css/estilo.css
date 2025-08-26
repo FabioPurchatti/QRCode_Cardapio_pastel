@@ -1,87 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-
 body {
-    background-color: #24BBF2;
-    
+  background-color: #24bbf2;
 }
 
 header {
-    background-color: #FE3401;
-    padding: 20px;
-    border-radius: 3px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: #fe3401;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 h1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3px;
-    color: black;
-    margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  color: black;
+  margin-left: 60px;
+}
+
+.produto h4 {
+  background-color: #24bbf2;
+  border-radius: 15px;
+  border: solid 2px black;
+  padding: 10px;
+  margin-top: auto;
+}
+
+.produto p.ingredientes {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 10px 0;
 }
 
 .texto1 p {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-    padding: 3px;
-    margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  margin-left: 60px;
 }
 
-
-
 .sabores h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 
 .sabores p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bebidas h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
 
 .sabores-list,
 .bebidas-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px; /* espaço entre os produtos */
   padding: 20px;
   line-height: 1.5rem;
 }
-
 .produto {
+  display: flex;
+  flex-direction: column; /* organiza os elementos em coluna */
   background: #fff;
   border-radius: 20px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 img {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 10px; /* centraliza a imagem e adiciona margem inferior */
+}
+
+.rodape {
+    background-color: #fe3401;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.rodape h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    color: black;
+}
+.rodape p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    color: black;
 }
