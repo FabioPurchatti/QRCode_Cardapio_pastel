@@ -117,3 +117,7 @@ img {
     padding: 3px;
     color: black;
 }
+
+.rodape {
+  display: flex;
+}
