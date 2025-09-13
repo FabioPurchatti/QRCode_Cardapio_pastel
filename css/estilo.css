@@ -3,19 +3,27 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: Helvetica, Helvetica;
+
 }
 
+
+
 body {
-  background-color: #24bbf2;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Helvetica;
+  /*background-color: #ececec;*/
+  background-color: #e35526;
 }
 
 header {
-  background-color: #fe3401;
-  padding: 20px;
-  border-radius: 3px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+  padding: 30px;
+  background-image: url("/imagens/PAPELT.png");
+  background-repeat: no-repeat;
+  background-position: top center;  /* centraliza e gruda no fundo */
+  background-size: 100% 100%;
+}  
 
 h1 {
   display: flex;
@@ -26,18 +34,13 @@ h1 {
   margin-left: 60px;
 }
 
-.produto h4 {
-  background-color: #24bbf2;
-  border-radius: 15px;
-  border: solid 2px black;
-  padding: 10px;
-  margin-top: auto;
-}
-
-.produto p.ingredientes {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  margin: 10px 0;
+.texto1 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  color: black;
+  margin-left: 60px;
 }
 
 .texto1 p {
@@ -48,60 +51,132 @@ h1 {
   margin-left: 60px;
 }
 
-.sabores h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-}
-
+/*.sabores h2,
 .sabores p {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
+}*/
+
+.sabores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem; /* margem acima */
+  padding: 0 60px;  /* espaçamento lateral */
 }
 
-.bebidas h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
+main {
+ background-color: #f3ede8;
 }
+
+.sabores h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.sabores p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.produto h4 {
+  position: static;
+  margin-left: auto;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  align-self: center;
+}
+
+.produto p.ingredientes {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.texto1 p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  margin-left: 60px;
+}
+
+
+.bebidas h2 {
+  margin-top: 2rem;
+  padding-left: 60px;   
+  padding-right: 60px;  
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/*.sabores-list,
+.bebidas-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px; 
+  padding: 20px;
+  line-height: 1.5rem;
+} */
 
 .sabores-list,
 .bebidas-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px; /* espaço entre os produtos */
-  padding: 20px;
-  line-height: 1.5rem;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+  gap: 2rem;
+  padding: 2rem;
 }
+
 .produto {
   display: flex;
-  flex-direction: column; /* organiza os elementos em coluna */
-  background: #fff;
-  border-radius: 20px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+  background-color: #fff2e6;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  position: relative;
+  gap: 1rem;
+  min-height: 100px;
+  align-items: center;
+}
+
+.produto .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-transform: uppercase;
+}
+
+.produto h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 img {
-  width: 150px;
-  height: 150px;
-  border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin: 0 auto 10px; /* centraliza a imagem e adiciona margem inferior */
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .rodape {
-    background-color: #fe3401;
-    padding: 20px;
-    border-radius: 3px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+  background-color: #e35526;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 20px;
+  background-image: url("../imagens/PAPELB.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;  /* centraliza e gruda no fundo */
+  background-size: 100% 100%;
 }
+
 
 .rodape h2 {
     display: flex;
@@ -118,3 +193,120 @@ img {
     color: black;
 }
 
+/*@media (max-width: 640px) {
+  body { margin: 0; }
+
+  main {
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+  }
+
+  .sabores-list {
+    display: block;      
+    padding: 0;
+  }
+
+  .produto {
+    min-height: 100vh;  
+    scroll-snap-align: start;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;  
+    gap: 16px;
+    border-radius: 0;
+  }
+}*/
+
+.to-top{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9999;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: #140e12;           /* cor do botão */
+  color: #fff;                 /* cor da seta (usa currentColor) */
+  box-shadow: 0 6px 18px rgba(0,0,0,.2);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+
+  /* estado inicial (escondido) */
+  opacity: 0;
+  transform: translateY(16px) scale(.95);
+  pointer-events: none;
+
+  transition:
+    opacity .25s ease,
+    transform .25s ease,
+    background-color .2s ease;
+}
+
+/* estado visível após rolagem */
+.to-top.show{
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* foco para acessibilidade */
+.to-top:focus-visible{
+  outline: 3px solid #e35526;   /* amarelinho de foco */
+  outline-offset: 3px;
+}
+
+/* hover */
+.to-top:hover{ background:#000; }
+
+@media (max-width: 640px) {
+  header,
+  .rodape { border-radius: 0; }
+
+  .texto1 h1 { 
+    margin-left: 0; 
+    justify-content: center; 
+    text-align: center; 
+  }
+
+  .sabores {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .25rem;
+    padding: 0 16px;
+    margin-top: 1rem;
+  }
+
+  .sabores-list,
+  .bebidas-list {
+    grid-template-columns: 1fr;   /* <- 1 coluna */
+    gap: 12px;
+    padding: 12px 16px 24px;
+  }
+
+  .produto {
+    padding: 12px;
+    gap: 12px;
+    border-radius: 12px;
+  }
+
+  /* Tipos e imagens um pouco maiores pro toque */
+  .produto h3 { font-size: 18px; }
+  .produto p.ingredientes { font-size: 14px; }
+  .produto h4 { font-size: 16px; }
+
+  img {
+    width: 96px;
+    height: 96px;
+    border-radius: 12px;
+  }
+
+
+
+}
+
+@media (min-width: 768px){
+  .to-top{ right: 24px; bottom: 24px; width: 54px; height: 54px; }
+}

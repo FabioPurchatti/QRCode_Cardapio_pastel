@@ -54,3 +54,35 @@ async function carregarProdutos() {
     }   
 }
  document.addEventListener("DOMContentLoaded", carregarProdutos);
+
+
+
+
+ (function () {
+  const btn = document.getElementById('toTop');
+  if (!btn) return;
+
+  const THRESHOLD = 120; // px de rolagem para mostrar
+
+  // mostrar/ocultar no scroll
+  const onScroll = () => {
+    if (window.scrollY > THRESHOLD) {
+      btn.classList.add('show');
+    } else {
+      btn.classList.remove('show');
+    }
+  };
+
+  // rolagem suave até o topo
+  const scrollToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // ligar eventos
+  window.addEventListener('scroll', onScroll, { passive: true });
+  btn.addEventListener('click', scrollToTop);
+
+  // chamada inicial (caso entre em âncoras já roladas)
+  onScroll();
+})();

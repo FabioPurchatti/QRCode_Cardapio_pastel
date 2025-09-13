@@ -10,15 +10,20 @@
     
  
 </head>
-
+<button id="toTop" class="to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+  <!-- setinha em SVG (sem precisar de imagem externa) -->
+  <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 5l-7 7h4v7h6v-7h4z" fill="currentColor"/>
+  </svg>
+</button>
 <body>
 
     <!--Inicio cabeçalho topo contendo texto 1-->
     <header>
         <div class="texto1">
-            <h1>Pastel de feira</h1>
-            <p>Pastel de feira é tradição e fica muito mais gostoso quando é feito com amor no coração. Seja bem vindo.
-            </p>
+            <h1><img src="Imagens/Logo.svg" alt="Logo Pastel Meeting"></h1>
+           <!-- <p>Pastel de feira é tradição e fica muito mais gostoso quando é feito com amor no coração. Seja bem vindo.
+            </p>-->
         </div>
     </header>
     <!-- Fim cabeçalho topo contendo texto 1-->
@@ -36,7 +41,136 @@
         <section>
             <!--Inicio cabeçalho da tabela de sabores-->
             <div class="sabores-list">
-                <!--Inserido pelo JS-->
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Pastel de carne">
+                    <div class="info">   
+                        <h3>Carne</h3>
+                        <p class="ingredientes">Carne</p>
+                    </div>
+                    <h4>R$ 9,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Pastel de queijo">
+                    <div class="info">
+                        <h3>Queijo</h3>
+                        <p class="ingredientes">Queijo mussarela</p>
+                    </div>
+                    <h4>R$ 9,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="2 em 1">
+                    <div class="info">
+                        <h3>2 em 1</h3>
+                        <p class="ingredientes">Carne e queijo mussarela</p>
+                    </div>
+                    <h4>R$ 10,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="3 em 1">
+                    <div class="info">
+                        <h3>3 em 1</h3>
+                        <p class="ingredientes">Carne, queijo mussarela e calabresa</p>
+                    </div>
+                    <h4>R$ 10,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="pizza">
+                    <div class="info">
+                        <h3>Pizza</h3>
+                        <p class="ingredientes">Queijo mussarela, presunto, tomate, azeitona e orégano</p>
+                    </div>
+                    <h4>R$ 10,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Palmito">
+                    <div class="info">
+                        <h3>Palmito</h3>
+                        <p class="ingredientes">Palmito, tomate e salsinha</p>
+                    </div>
+                    <h4>R$ 10,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Palmito com queijo">
+                    <div class="info">
+                        <h3>Palmito com queijo</h3>
+                        <p class="ingredientes">Palmito, tomate, queijo mussarela e salsinha</p>
+                    </div>
+                    <h4>R$ 10,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Palmito com requeijão">
+                    <div class="info">
+                        <h3>Palmito com requeijão</h3>
+                        <p class="ingredientes">Palmito, tomate, requeijão e salsinha</p>
+                    </div>
+                    <h4>R$ 10,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Mexicano">
+                    <div class="info">
+                        <h3>Mexicano</h3>
+                        <p class="ingredientes">Carne, presunto, calabresa, salsinha e pimenta calabresa</p>
+                    </div>
+                    <h4>R$ 10,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Frango com catupiry">
+                    <div class="info">
+                        <h3>Frango com catupiry</h3>
+                        <p class="ingredientes">Frango desfiado, salsinha, e catupiry</p>
+                    </div>
+                    <h4>R$ 12,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Carne Seca com queijo">
+                    <div class="info">
+                        <h3>Carne Seca com queijo</h3>
+                        <p class="ingredientes">Carne seca desfiada, salsinha e queijo mussarela</p>
+                    </div>
+                    <h4>R$ 10,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Costela com Requeijão">
+                    <div class="info">
+                        <h3>Costela com Requeijão</h3>
+                        <p class="ingredientes">Costela desfiada, salsinha e requeijão</p>
+                    </div>
+                    <h4>R$ 10,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Alho Poró com queijo">
+                    <div class="info">
+                        <h3>Alho Poró com queijo</h3>
+                        <p class="ingredientes">Alho Poró, azeitona, salsinha e queijo mussarela</p>
+                    </div>
+                    <h4>R$ 10,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Brócolis com queijo">
+                    <div class="info">
+                        <h3>Brócolis com queijo</h3>
+                        <p class="ingredientes">Brócolis, tomate e salsinha</p>
+                    </div>
+                    <h4>R$ 10,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Camarão com catupiry">
+                    <div class="info">
+                        <h3>Camarão com catupiry</h3>
+                        <p class="ingredientes">Camarão, salsinha e tomate</p>
+                    </div>
+                    <h4>R$ 12,00</h4>
+                </article>
+                <article class="produto">
+                    <img src="Imagens/carne.jpg" alt="Monte seu pastel">
+                    <div class="info">
+                        <h3>Monte seu pastel com até 6 sabores</h3>
+                        <p class="ingredientes">Carne, queijo, presunto, calabresa, palmito, mexicano, frango, carne seca,
+                            costela, alho
+                            poró, brócolis, catupiry e cheddar.</p>
+                    </div>
+                    <h4>R$ 14,00</h4>
+                </article>
             </div>
         </section>
         <!--Final Sabores-->
@@ -100,9 +234,9 @@
 
     <!--Inicio rodapé-->
     <footer class="rodape">
-        <img src="#" alt="Logo do pastel">
-        <h2>Pastel</h2>
-        <p>Onde a reunião com os amigos fica mais prazerosa</p>
+        <img src="Imagens/Logo.svg" alt="Logo Pastel Meeting">
+        <h2><img src="Imagens/Pastel.svg" alt="Logo Pastel Meeting"></h2>
+        <p>colocara aqui rua etc e tals</p>
     </footer>
     <!--Final rodapé-->
 
