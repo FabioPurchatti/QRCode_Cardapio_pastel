@@ -14,7 +14,7 @@ body {
   padding: 0;
   font-family: Helvetica, Helvetica;
   /*background-color: #ececec;*/
-  background-color: #e35526;
+  background-color: #f1efea;
 }
 
 header {
@@ -65,10 +65,6 @@ h1 {
   align-items: center;
   margin-top: 2rem; /* margem acima */
   padding: 0 60px;  /* espaçamento lateral */
-}
-
-main {
- background-color: #f3ede8;
 }
 
 .sabores h2 {
@@ -135,9 +131,11 @@ main {
 
 .produto {
   display: flex;
-  background-color: #fff2e6;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  /*background-color: #fff2e6;*/
+  border-color: #e35526;
+  border: 3px dotted #e35526;
+   /*border-radius: 15px;*/
+  /*box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
   padding: 1rem;
   position: relative;
   gap: 1rem;
@@ -167,7 +165,6 @@ img {
 }
 
 .rodape {
-  background-color: #e35526;
   padding: 10px;
   border-radius: 3px;
   margin-top: 20px;
