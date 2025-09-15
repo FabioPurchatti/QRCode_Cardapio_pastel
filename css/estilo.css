@@ -190,6 +190,15 @@ img {
     color: black;
 }
 
+.img-centro {
+position: flex;
+height: auto;
+left: 100%;
+top: center;
+}
+
+
+
 /*@media (max-width: 640px) {
   body { margin: 0; }
 
