@@ -18,6 +18,8 @@ async function carregarProdutos() {
         const linhas = json.table.rows;
 
         const saboresList = document.querySelector(".sabores-list");
+        const bebidasList = document.querySelector(".bebidas-list");
+        
 
         saboresList.innerHTML = "";
 
@@ -25,27 +27,45 @@ async function carregarProdutos() {
         linhas.forEach((linha) => {
 
             let nome = linha.c[0]?.v || "";
-            let ingredientes = linha.c[1]?.v || "";
+            let info = linha.c[1]?.v || "";
             let preco = linha.c[2]?.v || "";
             let imagem = linha.c[3]?.v || "";
             let ativo = linha.c[4]?.v || "FALSE";
+            let tipo = linha.c[5]?.v || "";
 
             // mostra apenas os produtos disponiveis
-            if (ativo.toString().toUpperCase() !== "TRUE" || nome === "") {
+            if (ativo.toString().toUpperCase() !== "TRUE" || nome.toString() === "") {
                 return;
             }
 
             // criação do elemento html
-            const artigo = document.createElement("article");
-            artigo.classList.add("produto");
-
-            artigo.innerHTML = `
-                <img src="${imagem}" alt="${nome}">
-                <h3>${nome}</h3>
-                <p class={"ingredientes"}>(${ingredientes})</p>
-                <h4>R$ ${preco}</h4>`;
-            
-            saboresList.appendChild(artigo);
+            if (tipo.toString().toUpperCase() === "SABOR") {
+              console.log(preco);
+              const artigo = document.createElement("article");
+              artigo.classList.add("produto");
+  
+              artigo.innerHTML = `
+                  <img src="${imagem}" alt="${nome}">
+                  <div class={"info"}>
+                      <h3>${nome}</h3>
+                      <p class={"ingredientes"}>(${info})</p>
+                  </div>
+                  <h4>${preco.toString()}</h4>`;
+              
+              saboresList.appendChild(artigo);
+            }
+            else if (tipo.toString().toUpperCase() === "BEBIDA") {
+              const artigo = document.createElement("article");
+              artigo.classList.add("produto");
+  
+              artigo.innerHTML = `
+                  <img src="${imagem}" alt="${nome}">
+                  <h3>${nome}</h3>
+                  <p>${info}</p>
+                  <h4>${preco}</h4>`;
+              
+              bebidasList.appendChild(artigo);
+            }
         });
 
     } catch (erro) {
@@ -53,10 +73,9 @@ async function carregarProdutos() {
         return;
     }   
 }
- document.addEventListener("DOMContentLoaded", carregarProdutos);
+document.addEventListener("DOMContentLoaded", carregarProdutos);
 
-
-
+// Botão voltar ao topo
 
  (function () {
   const btn = document.getElementById('toTop');
