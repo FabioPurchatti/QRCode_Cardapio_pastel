@@ -7,8 +7,6 @@
 
 }
 
-
-
 body {
   margin: 0;
   padding: 0;
@@ -19,7 +17,7 @@ body {
 
 header {
   padding: 30px;
-  background-image: url("/imagens/PAPELT.png");
+  background-image: url("/imagens/PAPELTM.png");
   background-repeat: no-repeat;
   background-position: top center;  /* centraliza e gruda no fundo */
   background-size: 100% 100%;
@@ -165,39 +163,46 @@ img {
 }
 
 .rodape {
-  padding: 10px;
-  border-radius: 3px;
+  padding: 50px;
   margin-top: 20px;
-  background-image: url("../imagens/PAPELB.png");
+  background-image: url("../imagens/PAPELBM.png");
   background-repeat: no-repeat;
   background-position: bottom center;  /* centraliza e gruda no fundo */
   background-size: 100% 100%;
 }
 
-
-.rodape h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-    color: black;
+.rodape div {
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  position: relative;     
 }
+
 .rodape p {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3px;
-    color: black;
+    color: rgb(233, 233, 233);
+}
+
+.img-esquerda {
+  position: absolute;
+  left: 20px;       
+  max-height: 60px; 
+  width: auto;
 }
 
 .img-centro {
-position: flex;
-height: auto;
-left: 100%;
-top: center;
+  max-height: 60px;
+  width: auto;
 }
 
-
+.produto h4,
+.produto p.medida,
+.produto .ingredientes {
+  white-space: nowrap;
+}
 
 /*@media (max-width: 640px) {
   body { margin: 0; }
@@ -284,6 +289,7 @@ top: center;
     padding: 0 16px;
     margin-top: 1rem;
   }
+
 
   .sabores-list,
   .bebidas-list {
