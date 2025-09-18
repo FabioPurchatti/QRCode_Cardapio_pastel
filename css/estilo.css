@@ -1,5 +1,7 @@
+/* Fonte externa */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+/*Reset das configurações da página*/
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
 
 }
 
+/*Configurações da página*/
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +18,7 @@ body {
   background-color: #f1efea;
 }
 
+/*Configurações do cabeçalho*/
 header {
   padding: 30px;
   background-image: url("/imagens/PAPELTM.png");
@@ -23,6 +27,7 @@ header {
   background-size: 100% 100%;
 }  
 
+/*Confoigurações de todos os h1 que estiverem na página*/
 h1 {
   display: flex;
   justify-content: space-between;
@@ -32,6 +37,7 @@ h1 {
   margin-left: 60px;
 }
 
+/*Configurações da classe texto1 com h1 e parágrafos da classe texto1*/
 .texto1 h1 {
   display: flex;
   justify-content: center;
@@ -57,6 +63,7 @@ h1 {
   padding: 15px;
 }*/
 
+/*Configuração da classe sabores incluindo h2, parágrafo e h4 da section com a classe sabores*/
 .sabores {
   display: flex;
   justify-content: space-between;
@@ -86,6 +93,7 @@ h1 {
   align-self: center;
 }
 
+
 .produto p.ingredientes {
   margin: 5px 0 0;
   font-size: 14px;
@@ -102,13 +110,12 @@ h1 {
 
 
 .bebidas h2 {
-  margin-top: 2rem;
-  padding-left: 60px;   
-  padding-right: 60px;  
+  
+  margin: 10px 10px 10px 22px;
   font-size: 28px;
   font-weight: bold;
-  text-align: left;
 }
+
 
 /*.sabores-list,
 .bebidas-list {
