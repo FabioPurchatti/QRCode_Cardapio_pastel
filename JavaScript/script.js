@@ -1,5 +1,5 @@
 // ID da planilha
-const sheetId = "1W0AGVO5GQUYSS4MPZPbcCGlVY00-H19sJNSTMd-N1H8";
+const sheetId = "1O__Nfaa4OCCdTX9IxzYl1kRE4CEiZ1Ewm0D3fyKjVC4";
 
 // URL para acessar os dados da planilha em formato JSON
 const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json`;
@@ -40,7 +40,6 @@ async function carregarProdutos() {
 
             // criação do elemento html
             if (tipo.toString().toUpperCase() === "SABOR") {
-              console.log(preco);
               const artigo = document.createElement("article");
               artigo.classList.add("produto");
   
