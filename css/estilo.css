@@ -199,8 +199,7 @@ img {
 }
 
 .produto h4,
-.produto p.medida,
-.produto .ingredientes {
+.bebidas-list p{
   white-space: nowrap;
 }
 
