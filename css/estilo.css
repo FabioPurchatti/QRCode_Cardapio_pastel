@@ -64,6 +64,16 @@ h1 {
 }*/
 
 /*Configuração da classe sabores incluindo h2, parágrafo e h4 da section com a classe sabores*/
+
+#saboresinicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem; /* margem acima */
+  padding: 0 60px;  /* espaçamento lateral */
+}
+
+
 .sabores {
   display: flex;
   justify-content: space-between;
@@ -138,7 +148,7 @@ h1 {
   /*background-color: #fff2e6;*/
   border-color: #e35526;
   border: 3px dotted #e35526;
-   /*border-radius: 15px;*/
+  border-radius: 12px;
   /*box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
   padding: 1rem;
   position: relative;
@@ -146,6 +156,55 @@ h1 {
   min-height: 100px;
   align-items: center;
 }
+
+.produtoadicional {
+  width: fit-content;
+   border-color: #e35526;
+  border: 3px dotted #e35526;
+  padding: 1rem;
+  text-align: center;
+  margin:23px;
+  position:relative;
+   gap: 1rem;
+  min-height: 100px;
+  align-items: center;
+  border-radius: 12px;
+  
+}
+
+
+
+.produtoadicional p {
+  padding: 10px;
+  text-align: left;
+}
+
+.produtoadicionalcatupiry {
+  width: fit-content;
+   border-color: #e35526;
+  border: 3px dotted #e35526;
+  padding: 1rem;
+  text-align: center;
+  margin:23px;
+  position:relative;
+   gap: 1rem;
+  min-height: 100px;
+  align-items: center;
+  border-radius: 12px;
+  
+}
+
+
+
+.produtoadicionalcatupiry p {
+  padding: 10px;
+  text-align: left;
+}
+
+.produtoadicionalcatupiry img {
+  align-items: baseline;
+}
+
 
 .produto .info {
   display: flex;
@@ -308,6 +367,9 @@ img {
     gap: 12px;
     border-radius: 12px;
   }
+
+ 
+  
 
   /* Tipos e imagens um pouco maiores pro toque */
   .produto h3 { font-size: 18px; }
