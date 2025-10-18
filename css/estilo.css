@@ -21,7 +21,7 @@ body {
 /*Configurações do cabeçalho*/
 header {
   padding: 30px;
-  background-image: url("/imagens/PAPELTM.jpg");
+  background-image: url("/imagens/PAPELTM.png");
   background-repeat: no-repeat;
   background-position: top center;  /* centraliza e gruda no fundo */
   background-size: 100% 100%;
