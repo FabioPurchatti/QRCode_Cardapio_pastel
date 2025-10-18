@@ -65,12 +65,10 @@ h1 {
 
 /*Configuração da classe sabores incluindo h2, parágrafo e h4 da section com a classe sabores*/
 
-#saboresinicio {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem; /* margem acima */
-  padding: 0 60px;  /* espaçamento lateral */
+.saboresinicio {
+  margin: 23px;
+  font-size: 15px;
+  
 }
 
 
@@ -155,6 +153,7 @@ h1 {
   gap: 1rem;
   min-height: 100px;
   align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .produtoadicional {
@@ -169,7 +168,7 @@ h1 {
   min-height: 100px;
   align-items: center;
   border-radius: 12px;
-  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -191,6 +190,7 @@ h1 {
   min-height: 100px;
   align-items: center;
   border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
 }
 
