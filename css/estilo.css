@@ -21,7 +21,7 @@ body {
 /*Configurações do cabeçalho*/
 header {
   padding: 30px;
-  background-image: url("/imagens/PAPELTM.png");
+  background-image: url("/img/PAPELTM.png");
   background-repeat: no-repeat;
   background-position: top center;  /* centraliza e gruda no fundo */
   background-size: 100% 100%;
@@ -232,7 +232,7 @@ img {
 .rodape {
   padding: 50px;
   margin-top: 20px;
-  background-image: url("../imagens/PAPELBM.png");
+  background-image: url("../img/PAPELBM.png");
   background-repeat: no-repeat;
   background-position: bottom center;  /* centraliza e gruda no fundo */
   background-size: 100% 100%;
