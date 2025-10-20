@@ -159,7 +159,7 @@ h1 {
 }
 
 .produtoadicional {
-  width: fit-content;
+  width: flex;
    border-color: #e35526;
   border: 3px dotted #e35526;
   padding: 1rem;
@@ -179,6 +179,43 @@ h1 {
   padding: 10px;
   text-align: left;
 }
+
+.produtoadicional .imagens-adicionais {
+    display: flex;
+    justify-content:flex-start; 
+    gap: 10px; 
+}
+
+.produtoadicional .imagens-adicionais img {
+    display: block; /* evita espaçamento indesejado em imagens inline */
+    width: 80px; /* ajuste se quiser um tamanho fixo */
+    height: auto;
+}
+
+.produtoadicionalcatupiry {
+    display: flex;
+    justify-content:flex-start; 
+    gap: 10px; 
+}
+
+.produtoadicionalcatupiry img {
+    display: block; /* evita espaçamento indesejado em imagens inline */
+    width: 80px; /* ajuste se quiser um tamanho fixo */
+    height: auto;
+}
+
+
+
+
+
+
+/*.produtoadicional .imagens-adicionais img {
+    display: inline-block;
+    align-items: left;
+    unicode-bidi: isolate;
+    overflow: clip;
+    justify-content: flex-end;
+}*/
 
 .produtoadicionalcatupiry {
   width: fit-content;
