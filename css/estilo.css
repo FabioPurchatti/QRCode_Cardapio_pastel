@@ -36,6 +36,10 @@ h1 {
   color: black;
   margin-left: 60px;
 }
+.balcao {
+  color: red;
+  font-size: 18px;
+}
 
 /*Configurações da classe texto1 com h1 e parágrafos da classe texto1*/
 .texto1 h1 {
@@ -45,6 +49,11 @@ h1 {
   padding: 3px;
   color: black;
   margin-left: 60px;
+}
+
+.texto1 img{
+  width:200px;
+  height:auto;
 }
 
 .texto1 p {

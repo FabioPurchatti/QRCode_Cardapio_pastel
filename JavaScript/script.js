@@ -104,3 +104,4 @@ document.addEventListener("DOMContentLoaded", carregarProdutos);
   // chamada inicial (caso entre em âncoras já roladas)
   onScroll();
 })();
+
