@@ -374,18 +374,18 @@ img {
 
 @media (max-width: 640px) {
   header {
-    height: 16vh;
+    height: 2vh;
   }
 
   header,
   .rodape {
     border-radius: 0;
   }
-  .texto1 img {
+  .imagem-logo-mae {
     display: flex;
     align-items: center;
-    height: 16vh;
-    width: 13vh;
+    height: 1vh;
+    width: 10vh;
     margin: auto;
   }
 
