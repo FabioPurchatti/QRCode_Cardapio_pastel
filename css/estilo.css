@@ -208,7 +208,7 @@ h1 {
 }
 
 .produtoadicional .imagens-adicionaisqrcode img {
-  display: block; /* evita espaçamento indesejado em imagens inline */
+  display: flex; /* evita espaçamento indesejado em imagens inline */
   width: 200px; /* ajuste se quiser um tamanho fixo */
   height: auto;
 }
@@ -405,6 +405,13 @@ img {
     width: 13vh;
     margin: auto;
   }
+
+  .imagens-adicionaisqrcode,
+  img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
   .sabores {
     flex-direction: column;
     align-items: flex-start;
@@ -449,6 +456,7 @@ img {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    alignment-baseline: alphabetic;
   }
 
   header {
@@ -466,5 +474,12 @@ img {
     height: 16vh;
     width: 13vh;
     margin: auto;
+  }
+
+  .imagens-adicionaisqrcode,
+  img {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
   }
 }
