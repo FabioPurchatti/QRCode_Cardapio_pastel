@@ -380,6 +380,7 @@ img {
   header,
   .rodape {
     border-radius: 0;
+    align-items: flex-start;
   }
   .imagem-logo-mae {
     display: flex;
