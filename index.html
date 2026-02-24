@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio Pastel</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <!-- ScrollSmoother requires ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"defer ></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"defer></script>
     <script src="JavaScript/script.js" defer></script>
+    <script src="JavaScript/animacaoScroll.js" defer></script>
+         
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -22,11 +32,14 @@
 
 <body>
 
-    <!--Inicio cabeçalho topo contendo texto 1-->
-    <header class="container">
+    <!--ScrollSmoother-->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+             <!--Inicio cabeçalho topo contendo texto 1-->
+    <header class="container" >
 
-          <div class="imagem-logo-mae">
-            <img src="img/Pastel Regina logo1 sem fundo.png" alt="Logo Pastel Meeting"> 
+          <div class="imagem-logo-mae" data-speed="2">
+            <img src="img/Pastel Regina logo1 sem fundo.png" alt="Logo Pastel Meeting" > 
            
         </div>
      
@@ -106,7 +119,14 @@
         </div>
     </footer>
     <!--Final rodapé-->
+    </div>
+    </div>
 
 </body>
 
 </html>
+
+
+    
+
+   
