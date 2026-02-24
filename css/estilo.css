@@ -8,6 +8,13 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
 /*Configurações da página*/
 body {
   margin: 0;
@@ -17,13 +24,26 @@ body {
 }
 
 /*Configurações do cabeçalho*/
-header {
+/*header {
   background-image: url("/img/PAPELTM.png");
   background-repeat: no-repeat;
-  background-position: top center; /* centraliza e gruda no fundo */
+  background-position: top center; 
   background-size: 100% 100%;
   height: auto;
   padding: 40px 0;
+}*/
+
+header {
+  background-image: url("/img/PAPELTM.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  height: 300px; /* defina uma altura real */
+
+  display: flex;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center; /* centraliza vertical */
 }
 
 /*Confoigurações de todos os h1 que estiverem na página*/
@@ -43,15 +63,21 @@ h1 {
 
 /*Configurações da classe texto1 com h1 e parágrafos da classe texto1*/
 
-.imagem-logo-mae {
-  max-width: 200%;
-  width: auto;
-  height: 128vh;
+/*.imagem-logo-mae {
   display: flex;
-  justify-items: center;
   justify-content: center;
-  margin-left: 40px;
-  transform: scale(2.5);
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  max-width: 100%;
+  height: 300px;
+}*/
+
+.imagem-logo-mae {
+  width: 200px; /* tamanho da logo */
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: -120px;
 }
 
 .container {
@@ -192,7 +218,6 @@ h1 {
 }
 
 .produtoadicional .imagens-adicionaisqrcode img {
-  display: flex; /* evita espaçamento indesejado em imagens inline */
   width: 200px; /* ajuste se quiser um tamanho fixo */
   height: auto;
 }
@@ -253,13 +278,6 @@ h1 {
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
-}
-
-img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 10px;
 }
 
 .rodape {
@@ -374,6 +392,62 @@ img {
   background: #000;
 }
 
+@media (max-width: 360px) {
+  header {
+    height: 2vh;
+  }
+
+  header,
+  .rodape {
+    border-radius: 0;
+    align-items: flex-start;
+  }
+  .imagem-logo-mae {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 200px;
+  }
+
+  .imagens-adicionaisqrcode,
+  img {
+    align-items: center;
+    justify-content: center;
+  }
+  .sabores {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    padding: 0 16px;
+    margin-top: 1rem;
+  }
+
+  .sabores-list,
+  .bebidas-list {
+    grid-template-columns: 1fr; /* <- 1 coluna */
+    gap: 12px;
+    padding: 12px 16px 24px;
+  }
+
+  .produto {
+    padding: 12px;
+    gap: 12px;
+    border-radius: 12px;
+  }
+
+  /* Tipos e imagens um pouco maiores pro toque */
+  .produto h3 {
+    font-size: 18px;
+  }
+  .produto p.ingredientes {
+    font-size: 14px;
+  }
+  .produto h4 {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 640px) {
   header {
     height: 2vh;
@@ -387,7 +461,7 @@ img {
   .imagem-logo-mae {
     display: flex;
     align-items: center;
-    height: 1vh;
+
     width: 10vh;
     margin: auto;
     margin-top: 200px;
@@ -430,12 +504,6 @@ img {
   .produto h4 {
     font-size: 16px;
   }
-
-  img {
-    width: 96px;
-    height: 96px;
-    border-radius: 12px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -466,7 +534,7 @@ img {
   .imagens-adicionaisqrcode,
   img {
     align-items: center;
-    display: flex;
+
     justify-content: flex-start;
   }
 
