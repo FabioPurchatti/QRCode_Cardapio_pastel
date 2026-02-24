@@ -16,5 +16,10 @@ gsap.from(".imagem-logo-mae", {
 
 gsap.from(".imagem-logo-mae", {
   y: 100,
-  duration: 5,
+  duration: 3,
+});
+
+gsap.from(".container", {
+  y: -200,
+  duration: 3,
 });
