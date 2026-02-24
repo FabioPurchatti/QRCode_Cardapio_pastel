@@ -8,13 +8,6 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  border-radius: 10px;
-}
-
 /*Configurações da página*/
 body {
   margin: 0;
@@ -27,24 +20,9 @@ body {
 header {
   background-image: url("/img/PAPELTM.png");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top center; /* centraliza e gruda no fundo */
   background-size: 100% 100%;
-  height: auto;
-  padding: 40px 0;
 }
-
-/*header {
-  background-image: url("/img/PAPELTM.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-
-  height: 300px; 
-
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-}*/
 
 /*Confoigurações de todos os h1 que estiverem na página*/
 h1 {
@@ -64,19 +42,15 @@ h1 {
 /*Configurações da classe texto1 com h1 e parágrafos da classe texto1*/
 
 .imagem-logo-mae {
+  max-width: 100%;
+  max-width: 100%;
+  height: 150px;
   display: flex;
+  justify-items: center;
   justify-content: center;
-  align-items: center;
-  margin-top: -100px;
-  transform: scale(3);
+  margin-left: 40px;
+  transform: scale(2.5);
 }
-
-/*.imagem-logo-mae {
-  width: 200px; 
-  height: 300px;
-  object-fit: contain;
-  margin-bottom: -120px;
-}*/
 
 .container {
   padding: 120px;
@@ -216,6 +190,7 @@ h1 {
 }
 
 .produtoadicional .imagens-adicionaisqrcode img {
+  display: flex; /* evita espaçamento indesejado em imagens inline */
   width: 200px; /* ajuste se quiser um tamanho fixo */
   height: auto;
 }
@@ -276,6 +251,13 @@ h1 {
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .rodape {
@@ -403,12 +385,17 @@ h1 {
   .imagem-logo-mae {
     display: flex;
     align-items: center;
-
+    height: 1vh;
     width: 10vh;
     margin: auto;
-    margin-top: 200px;
   }
 
+  .imagens-adicionaisqrcode,
+  img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
   .sabores {
     flex-direction: column;
     align-items: flex-start;
@@ -440,6 +427,12 @@ h1 {
   .produto h4 {
     font-size: 16px;
   }
+
+  img {
+    width: 96px;
+    height: 96px;
+    border-radius: 12px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -470,11 +463,7 @@ h1 {
   .imagens-adicionaisqrcode,
   img {
     align-items: center;
-
+    display: flex;
     justify-content: flex-start;
-  }
-
-  .imagem-logo-mae {
-    margin-top: 190px;
   }
 }
