@@ -22,6 +22,8 @@ header {
   background-repeat: no-repeat;
   background-position: top center; /* centraliza e gruda no fundo */
   background-size: 100% 100%;
+  height: auto;
+  padding: 40px 0;
 }
 
 /*Confoigurações de todos os h1 que estiverem na página*/
@@ -42,10 +44,9 @@ h1 {
 /*Configurações da classe texto1 com h1 e parágrafos da classe texto1*/
 
 .imagem-logo-mae {
-  max-width: 100%;
-  max-width: 100%;
-  height: 335px;
-
+  max-width: 200%;
+  width: auto;
+  height: 128vh;
   display: flex;
   justify-items: center;
   justify-content: center;
@@ -389,7 +390,7 @@ img {
     height: 1vh;
     width: 10vh;
     margin: auto;
-    margin-top: 170px;
+    margin-top: 200px;
   }
 
   .imagens-adicionaisqrcode,
