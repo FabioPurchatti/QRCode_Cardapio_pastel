@@ -376,6 +376,7 @@ img {
 @media (max-width: 640px) {
   header {
     height: 2vh;
+    margin-top: -45px;
   }
 
   header,
@@ -389,6 +390,7 @@ img {
     height: 1vh;
     width: 10vh;
     margin: auto;
+    margin-top: -40px;
   }
 
   .imagens-adicionaisqrcode,
