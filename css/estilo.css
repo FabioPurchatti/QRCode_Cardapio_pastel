@@ -1,7 +1,18 @@
 /* Fonte externa */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+
+:root {
+  --cor-primaria: #e35526;
+  --cor-secundaria: #f1efea;
+  --cor-fundo: #ececec;
+  --cor-texto: #333;
+  --cor-destaque: #ff0000;
+  --cor-borda: #e35526;
+}
+
 /*Reset das configurações da página*/
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +31,8 @@ body {
 header {
   background-image: url("/img/PAPELTM.png");
   background-repeat: no-repeat;
-  background-position: top center; /* centraliza e gruda no fundo */
+  background-position: top center;
+  /* centraliza e gruda no fundo */
   background-size: 100% 100%;
   margin-top: -30px;
 }
@@ -34,6 +46,7 @@ h1 {
   color: black;
   margin-left: 60px;
 }
+
 .balcao {
   color: #ff0000;
   font-size: 18px;
@@ -78,8 +91,10 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem; /* margem acima */
-  padding: 0 60px; /* espaçamento lateral */
+  margin-top: 2rem;
+  /* margem acima */
+  padding: 0 60px;
+  /* espaçamento lateral */
 }
 
 .sabores h2 {
@@ -138,7 +153,8 @@ h1 {
 .sabores-list,
 .bebidas-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+  grid-template-columns: repeat(2, 1fr);
+  /* Duas colunas */
   gap: 2rem;
   padding: 2rem;
 }
@@ -146,8 +162,8 @@ h1 {
 .produto {
   display: flex;
   /*background-color: #fff2e6;*/
-  border-color: #e35526;
-  border: 3px dotted #e35526;
+  border-color: var(--cor-primaria);
+  border: 3px dotted var(--cor-primaria);
   border-radius: 12px;
   /*box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
   padding: 1rem;
@@ -185,14 +201,18 @@ h1 {
 }
 
 .produtoadicional .imagens-adicionais img {
-  display: block; /* evita espaçamento indesejado em imagens inline */
-  width: 80px; /* ajuste se quiser um tamanho fixo */
+  display: block;
+  /* evita espaçamento indesejado em imagens inline */
+  width: 80px;
+  /* ajuste se quiser um tamanho fixo */
   height: auto;
 }
 
 .produtoadicional .imagens-adicionaisqrcode img {
-  display: flex; /* evita espaçamento indesejado em imagens inline */
-  width: 200px; /* ajuste se quiser um tamanho fixo */
+  display: flex;
+  /* evita espaçamento indesejado em imagens inline */
+  width: 200px;
+  /* ajuste se quiser um tamanho fixo */
   height: auto;
 }
 
@@ -203,8 +223,10 @@ h1 {
 }
 
 .produtoadicionalcatupiry img {
-  display: block; /* evita espaçamento indesejado em imagens inline */
-  width: 80px; /* ajuste se quiser um tamanho fixo */
+  display: block;
+  /* evita espaçamento indesejado em imagens inline */
+  width: 80px;
+  /* ajuste se quiser um tamanho fixo */
   height: auto;
 }
 
@@ -266,7 +288,8 @@ img {
   margin-top: 20px;
   background-image: url("../img/PAPELBM.png");
   background-repeat: no-repeat;
-  background-position: bottom center; /* centraliza e gruda no fundo */
+  background-position: bottom center;
+  /* centraliza e gruda no fundo */
   background-size: 100% 100%;
 }
 
@@ -281,6 +304,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 3px;
   color: rgb(233, 233, 233);
 }
@@ -337,8 +361,10 @@ img {
   height: 48px;
   border: none;
   border-radius: 50%;
-  background: #140e12; /* cor do botão */
-  color: #fff; /* cor da seta (usa currentColor) */
+  background: #140e12;
+  /* cor do botão */
+  color: #fff;
+  /* cor da seta (usa currentColor) */
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
   display: grid;
   place-items: center;
@@ -364,7 +390,8 @@ img {
 
 /* foco para acessibilidade */
 .to-top:focus-visible {
-  outline: 3px solid #e35526; /* amarelinho de foco */
+  outline: 3px solid #e35526;
+  /* amarelinho de foco */
   outline-offset: 3px;
 }
 
@@ -384,6 +411,7 @@ img {
     border-radius: 0;
     align-items: flex-start;
   }
+
   .imagem-logo-mae {
     display: flex;
     align-items: center;
@@ -399,6 +427,7 @@ img {
     display: flex;
     justify-content: center;
   }
+
   .sabores {
     flex-direction: column;
     align-items: flex-start;
@@ -409,7 +438,8 @@ img {
 
   .sabores-list,
   .bebidas-list {
-    grid-template-columns: 1fr; /* <- 1 coluna */
+    grid-template-columns: 1fr;
+    /* <- 1 coluna */
     gap: 12px;
     padding: 12px 16px 24px;
   }
@@ -424,9 +454,11 @@ img {
   .produto h3 {
     font-size: 18px;
   }
+
   .produto p.ingredientes {
     font-size: 14px;
   }
+
   .produto h4 {
     font-size: 16px;
   }
@@ -455,6 +487,7 @@ img {
   .rodape {
     border-radius: 0;
   }
+
   .texto1 img {
     display: flex;
     align-items: center;

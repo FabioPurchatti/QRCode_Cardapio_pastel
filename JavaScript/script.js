@@ -1,3 +1,6 @@
+const saboresList = document.querySelector(".sabores-list");
+const bebidasList = document.querySelector(".bebidas-list");
+
 // ID da planilha
 const sheetId = "1O__Nfaa4OCCdTX9IxzYl1kRE4CEiZ1Ewm0D3fyKjVC4";
 
@@ -16,9 +19,6 @@ async function carregarProdutos() {
     const json = JSON.parse(texto.substring(47).slice(0, -2));
 
     const linhas = json.table.rows;
-
-    const saboresList = document.querySelector(".sabores-list");
-    const bebidasList = document.querySelector(".bebidas-list");
 
     saboresList.innerHTML = "";
 
@@ -100,3 +100,4 @@ document.addEventListener("DOMContentLoaded", carregarProdutos);
   // chamada inicial (caso entre em âncoras já roladas)
   onScroll();
 })();
+
